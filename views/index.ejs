@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zenuite</title>
+    <link href="/Stylesheets/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+      </style>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+        </style> 
+    </head>
+<body>
+    <%- include('Layoutsheets/navbar.ejs') %>
+    <div class="videeo">
+      <!-- Video background -->
+      <video autoplay muted loop playsinline class="bg-video">
+          <source src="/images/Timeline1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+      </video>
+  </div>
+  
+    <div class="choicee">
+      <div class="offer textoff">What We Offer</div>
+      <div class="okay">
+        <div class="servi" onclick="showSection('servi')">
+            <p class="tt">Services</p>
+        </div>
+        <div class="prods" onclick="showSection('prods')">
+            <p class="tt">Products</p>
+        </div>
+        <div class="clien" onclick="showSection('clien')">
+            <p class="tt">Clients</p>
+        </div>
+    </div>
+    
+      <div class="ok">
+          <!-- Service Cards Carousel -->
+          <div class="servicon section ownstyser">
+              <a href="/rentalservice" style="text-decoration: inherit; color: black;"><div class="one ownstysero"><img src="./images/rese.jpg" alt="Service 1"><p>Rental Services</p></div></a>
+              <a href="/sportfielmaintainance" style="text-decoration: inherit; color: black;"><div class="two ownstysert"><img src="./images/spma.jpg" alt="Service 2"><p>Sportfields Support</p></div></a>
+              <a href="/agronomy" style="text-decoration: inherit; color: black;"><div class="three ownstyserth"><img src="./images/agco.jpg" alt="Service 3"><p>Agronomy Consultancy</p></div></a>
+              <a href="/equipmentmaintainance" style="text-decoration: inherit; color: black;"><div class="four ownstyserf"><img src="./images/maintaintanceequipimg2.jpg" alt="Service 4"><p>Equipment support</p></div></a>
+          </div>
+
+          <!-- Products Cards Carousel -->
+          <div class="proddcar prodscon section">
+            <a href="/allet" style="text-decoration: inherit; color: black;"><div class="po"><img src="./images/starallet1.jpg" alt="Product 1"><p>Allet Turfcare</p></div></a>
+              <a href="/baroness" style="text-decoration: inherit; color: black;"><div class="pt "><img src="./images/starBaroness2.png" alt="Product 2"><p>Baroness Turfcare</p></div></a>
+              <a href="/brandt" style="text-decoration: inherit; color: black;"><div class="pth"><img src="./images/starBRANDT3.png" alt="Product 4"><p>Brandt Turfcare</p></div></a>
+              <a href="/gkb" style="text-decoration: inherit; color: black;"><div class="pfr"><img src="./images/starGKB4.jpg" alt="Product 2"><p>GKB Turfcare</p></div></a>
+              <a href="/grasssoln" style="text-decoration: inherit; color: black;"><div class="pth"><img src="./images/starbcelebrations5.png" alt="Product 4"><p>Bermuda Grass</p></div></a>                     
+          </div>
+
+          <!-- Clients Cards Carousel -->
+          <div class="cliencon section clinealln">
+              <div class="one"><img src="./images/clien1.png" alt="Client 1"><p>BCCI India </p></div>
+              <div class="two"><img src="./images/clien2.png" alt="Client 2"><p>KGA Bengaluru</p></div>
+              <div class="three"><img src="./images/clien3.jpg" alt="Client 3"><p>RCGC Calcutta</p></div>
+              <div class="four"><img src="./images/clien4.png" alt="Client 4"><p>Beleverde Group</p></div>
+          </div>
+      </div>
+  </div>
+  <div class="product">
+    <div class="prodhead brigg hn forwardanim">OUR PRODUCTS</div>
+    <div class="containeer">
+      <div class="row">
+        <!-- First Card -->
+        <div class="col-md-6 growcardan leftanim naya">
+          <div class="custom-card card mb-3">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="/images/GRASS,SEEDS,SPRINGS.png" class="img-fluid rounded-start iha" alt="...">
+              </div>
+              <div class="col-md-8">
+                <a href="/grasssoln" style="text-decoration: none;color: black;">
+                  <div class="card-body">
+                    <h5 class="card-title">Growth Solutions</h5>
+                    <p class="card-text">We offer a wide range of turfgrass varieties suited for both warm and cool climates. Whether you need durable grasses for sports fields, golf courses, or residential landscaping, we have the right solution to meet your specific needs. Explore our Premium products.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Second Card -->
+        <div class="col-md-6 bradtcardan rightanim maya">
+          <div class="custom-card card mb-3">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="./images/BRANDT_FER..png" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <a href="/brandt" style="text-decoration: none;color: black;">
+                  <div class="card-body">
+                    <h5 class="card-title">Brandt Fertilizers</h5>
+                    <p class="card-text">Our brand fertilizers are specially formulated to enhance the growth of turfgrass, ensuring lush, vibrant lawns and sports fields. Tailored to both cool and warm climates, our fertilizers provide essential nutrients that promote deep root development, improve resistance to diseases, and maintain a healthy green appearance.
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>     
+    <div class="lowfour">
+      <div class="lowfour-cards">
+        <div class="row g-4">
+          <div class="col-md-6 lowone leftanim">
+            <div class="custom-card-lowfour card">
+              <a href="/allet" style="text-decoration: none;color: black;">
+                <img src="./images/prod5_allet.png" class="card-img-top-lowfour" alt="...">
+                <div class="card-body-lowfour">
+                  <h5 class="card-title-lowfour">Allett Turfcare Equipments</h5>
+                  <p class="card-text-lowfour">provides high-quality, efficient solutions for enhancing turfs. From mowers to aerators,products are designed for precision ,ideal for sports fields, golf courses.</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6 lowtwo rightanim">
+            <div class="custom-card-lowfour card">
+              <a href="/gkb" style="text-decoration: none;color: black;">
+                <img src="./images/prod4_gkb.jpg" class="card-img-top-lowfour" alt="...">
+                <div class="card-body-lowfour">
+                  <h5 class="card-title-lowfour">GKB Turfcare Equipments</h5>
+                  <p class="card-text-lowfour">offers innovative and reliable tools for maintaining professional turf. products designed for aeration, mowing, and topdressing .</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6 lowthree leftanim">
+            <div class="custom-card-lowfour card">
+              <a href=".." style="text-decoration: none;color: black;">
+                <img src="./images/download.jpeg" class="card-img-top-lowfour" alt="...">
+                <div class="card-body-lowfour">
+                  <h5 class="card-title-lowfour">JRM Inc Consumable Turfcare</h5>
+                  <p class="card-text-lowfour">provides high-quality machines for efficient turf maintenance. Specializing in aerators and toppers, they deliver exceptional performance for golf courses.</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6 lowffour rightanim">
+            <div class="custom-card-lowfour card">
+              <a href="/baroness" style="text-decoration: none;color: black;">
+                <img src="./images/prod6_baroness.jpg" class="card-img-top-lowfour" alt="...">
+                <div class="card-body-lowfour">
+                  <h5 class="card-title-lowfour">Baroness Turfcare Equipment</h5>
+                  <p class="card-text-lowfour">offers precision machinery designed for professional turf management. They ranges mowers, aerators, and other tools for maintaining high-quality sports fields.</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+    <div class="services">
+      <div class="servicesname brigg forwardanim">Service Catalog</div>
+      <div class="servlist leftanim">
+        <!-- Rental Services -->
+        <a href="/rentalservice" style="text-decoration: none;color: black;" class="service-card">
+          <img src="./images/rentalserviimg.jpg" class="card-imagee" alt="Rental Services" />
+          <h2 class="card-title">Rental Services</h2>
+          <ul class="service-list">
+            <li>Sports Ground Rental</li>
+            <li>Event Equipment Rental.</li>
+            <li>Maintenance Equipment Rental</li>
+          </ul>
+        </a>
+    
+        <!-- Equipment Maintenance -->
+        <a href="/equipmentmaintainance" class="service-card">
+          <img src="./images/maintaintanceequipimg2.jpg" class="card-imagee" alt="Equipment Maintenance" />
+          <h2 class="card-title">Equipment Maintenance</h2>
+          <ul class="service-list">
+            <li>Sports Equipment Repair</li>
+            <li>Machinery Overhaul</li>
+            <li>Routine Inspections</li>
+          </ul>
+        </a>
+    
+        <!-- Sports Field Maintenance -->
+        <a href="/sportfieldmaintainance" class="service-card">
+          <img src="./images/images.jpg" class="card-imagee" alt="Sports Fields Maintenance" />
+          <h2 class="card-title">Sports Field Maintenance</h2>
+          <ul class="service-list">
+            <li>Regular Grass Cutting</li>
+            <li>Irrigation System Optimization</li>
+            <li>Field Lining and Marking</li>
+          </ul>
+        </a>
+    
+        <!-- Agronomy Consultancy -->
+        <a href="/agronomy" class="service-card">
+          <img src="./images/agronomyconsultancyserviimg.jpg" class="card-imagee" alt="Agronomy Consultancy" />
+          <h2 class="card-title">Agronomy Consultancy</h2>
+          <ul class="service-list">
+            <li>Comprehensive Soil Testing</li>
+            <li>Tailored Crop Advisory</li>
+            <li>Field Management Solutions</li>
+          </ul>
+        </a>
+      </div>
+    </div>
+      
+    <p class="blogname brigg forwardanim"> OUR BLOGS</p>
+   <div class="blogsec">
+    <section class="blog-section container rightanim">
+      <div class="blog-container">
+        <!-- Blog 1 -->
+        <a href="/blogone" class="blog-item">
+          <div class="blog-image">
+            <img src="./images/blogone.jpg" alt="Blog Image 1">
+          </div>
+          <div class="blog-info">
+            <h2 class="blog-title">Revolutionizing Turf : </h2>
+            <p class="blog-summary">Exploring the Latest Techniques in Sports Field Maintenance with Zenuit...</p>
+            <span class="read-more">Read more</span>
+          </div>
+        </a>
+    
+        <!-- Blog 2 -->
+        <a href="/blogtwo" class="blog-item">
+          <div class="blog-image">
+            <img src="./images/blogtwo.jpg" alt="Blog Image 2">
+          </div>
+          <div class="blog-info">
+            <h2 class="blog-title">Pitch Perfect :</h2>
+            <p class="blog-summary">A Tale of Cricket and Football Turf Mastery with Zenuit...</p>
+            <span class="read-more">Read more</span>
+          </div>
+        </a>
+    
+        <!-- Blog 3 -->
+        <a href="/blogthree" class="blog-item">
+          <div class="blog-image">
+            <img src="./images/blogthree.jpg" alt="Blog Image 3">
+          </div>
+          <div class="blog-info">
+            <h2 class="blog-title">Right Tools for Turf Triumph :</h2>
+            <p class="blog-summary">A Guide to Selecting Perfect Equipment for Your Field with Zenuit...</p>
+            <span class="read-more">Read more</span>
+          </div>
+        </a>
+      </div>
+    </section>
+   </div>
+    <div class="contactpage brigg forwardanim"><p>Reach Us</p></div>
+    <img src="./images/cntbg.jpg" class="bgmm" />
+    <div class="contact">
+      <div class="container-contact conani">
+        <h1>Contact Us</h1>
+        <p class="contact-description">Have any questions? We'd love to hear from you. Feel free to reach out using the form below!</p>
+    
+        <!-- Embed Google Form -->
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfTrKMrRdAWcHYogQn8r3DmYCJx_d8IvXfxBVG67tymy7Xw1w/viewform?embedded=true" width="540" height="450" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>    </div>
+    
+
+     <div class="aboutus">
+      <div class="info">
+        <h1 class="leaad etxt">Zenute: Your Partner in Sports Turf Excellence</h1>
+        <p class="led etxtn">At Zenute, we are committed to enhancing sports field quality with cutting-edge turfcare equipment and expert consultation services. Whether it's golf courses or cricket grounds, we provide tailor-made solutions designed to meet every client's specific needs.</p>
+        <p class="led etxtne">Our product lineup includes fertilizers, turfcare tools, and grass seeds, ensuring every detail contributes to world-class field performance. Additionally, our maintenance and rental services offer ongoing support to keep your fields in perfect condition.</p>
+      </div>
+     </div>
+     </div>
+    <script src="/js/index.js"></script>
+</body>
+</html>
